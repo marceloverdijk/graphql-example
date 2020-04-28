@@ -101,7 +101,21 @@
                         </users>
                     </add-user>
                 </configuration>
-            </plugin>    
+            </plugin>
+
+            <plugin>
+                <groupId>io.smallrye</groupId>
+                <artifactId>smallrye-graphql-maven-plugin</artifactId>
+                <version>${smallrye-graphql.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate-schema</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
                 
     </build>
